@@ -124,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				3720B08D2419004F00AF1A05 /* Facebooksignin.swift */,
-				37C62CFE242C05460002A8D5 /* Atomic Design */,
 				37C868892421B51C006C07DC /* Onboarding.swift */,
 				37C8688B2421BBAE006C07DC /* Signin.swift */,
 			);
@@ -154,6 +153,7 @@
 			children = (
 				37A292A92418F6FD008595DE /* AppDelegate.swift */,
 				37A292AB2418F6FD008595DE /* SceneDelegate.swift */,
+				37C62CFE242C05460002A8D5 /* Atomic Design */,
 				3720B08C2419004100AF1A05 /* Login */,
 				37A292AF2418F702008595DE /* Assets.xcassets */,
 				37A292B42418F702008595DE /* LaunchScreen.storyboard */,
