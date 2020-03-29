@@ -17,10 +17,10 @@ struct Data: View {
             }
                 
             data_portanal()
-            HStack {
-                data_likes().offset(x: -6)
+            ZStack {
+                data_likes().offset(x: -120)
                 data_comments()
-                data_tags().offset(x: 6)
+                data_tags().offset(x: 120)
             }
             data_engagement()
             HStack {

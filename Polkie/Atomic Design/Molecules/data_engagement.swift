@@ -12,7 +12,7 @@ struct data_engagement: View {
     var body: some View {
                ZStack {
                    Rectangle().frame(width: 350, height: 100).cornerRadius(20).foregroundColor(Color.pink).shadow(radius: 10)
-                   Text("Engagement")
+                Text("Engagement")
                }
     }
 }

@@ -12,7 +12,7 @@ struct data_tags: View {
     var body: some View {
          ZStack {
                        Rectangle().frame(width: 100, height: 100).cornerRadius(20).foregroundColor(Color.pink).shadow(radius: 10)
-                           Text("Tags")
+            Text("Tags")
                        }       }
 }
 

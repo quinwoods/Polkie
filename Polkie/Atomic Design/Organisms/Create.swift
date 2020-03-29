@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Create: View {
     var body: some View {
-        create_camera()
+        home_profilePicture()
     }
 }
 

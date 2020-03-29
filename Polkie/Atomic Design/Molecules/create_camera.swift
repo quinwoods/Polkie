@@ -9,55 +9,59 @@
 import SwiftUI
 
 struct CaptureImageView {
-  
-  /// MARK: - Properties
-  @Binding var isShown: Bool
-  @Binding var image: Image?
-  
-  func makeCoordinator() -> Coordinator {
-    return Coordinator(isShown: $isShown, image: $image)
-  }
+    
+    /// MARK: - Properties
+    @Binding var isShown: Bool
+    @Binding var image: Image?
+    
+    func makeCoordinator() -> Coordinator {
+        return Coordinator(isShown: $isShown, image: $image)
+    }
 }
 
 extension CaptureImageView: UIViewControllerRepresentable {
-  func makeUIViewController(context: UIViewControllerRepresentableContext<CaptureImageView>) -> UIImagePickerController {
-    let picker = UIImagePickerController()
-    picker.delegate = context.coordinator
+    func makeUIViewController(context: UIViewControllerRepresentableContext<CaptureImageView>) -> UIImagePickerController {
+        let picker = UIImagePickerController()
+        picker.delegate = context.coordinator
+        
+        //    picker.sourceType = .camera
+        return picker
+    }
     
-    picker.sourceType = .camera
-    return picker
-  }
-  
-  func updateUIViewController(_ uiViewController: UIImagePickerController,
-                              context: UIViewControllerRepresentableContext<CaptureImageView>) {
-    
-  }
+    func updateUIViewController(_ uiViewController: UIImagePickerController,
+                                context: UIViewControllerRepresentableContext<CaptureImageView>) {
+        
+    }
 }
 
 struct create_camera: View {
-  
-  @State var image: Image? = nil
-  @State var showCaptureImageView: Bool = false
-  
-  var body: some View {
-    ZStack {
-      VStack {
-        Button(action: {
-          self.showCaptureImageView.toggle()
-        }) {
-          Text("Choose photos")
+    
+    @State var image: Image? = nil
+    @State var showCaptureImageView: Bool = false
+    @State var buttonChoice: Image? = Image("plus")
+    
+    var body: some View {
+        ZStack {
+            
+           
+            image?.resizable()
+                .frame(width: 124, height: 124)
+            Button(action: {
+                           self.showCaptureImageView.toggle()
+                
+                       }) {
+                        if (image == nil) {
+                            Image("plus").frame(width: 124, height: 124)
+                        } else {
+                            Image("edit").frame(width: 124, height: 124)                        }
+                       }
+            
+            
+            if (showCaptureImageView) {
+                CaptureImageView(isShown: $showCaptureImageView, image: $image)
+            }
         }
-        image?.resizable()
-          .frame(width: 250, height: 200)
-          .clipShape(Circle())
-          .overlay(Circle().stroke(Color.white, lineWidth: 4))
-          .shadow(radius: 10)
-      }
-      if (showCaptureImageView) {
-        CaptureImageView(isShown: $showCaptureImageView, image: $image)
-      }
     }
-  }
 }
 
 struct create_camera_Previews: PreviewProvider {

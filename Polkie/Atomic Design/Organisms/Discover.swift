@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct Discover: View {
+    @State var packagesPressed = false
     var body: some View {
         VStack {
          
@@ -22,7 +23,13 @@ struct Discover: View {
             }
             .padding(.horizontal)
           
-            discover_packages().offset(y: 12)
+            if packagesPressed {
+                PackageMapView()
+            } else {
+                discover_packages().offset(y: 12).onTapGesture {
+                    self.packagesPressed.toggle()
+                }
+            }
         }
     }
 }

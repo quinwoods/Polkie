@@ -22,16 +22,7 @@ struct Messages: View {
                               Image("plus").resizable()
                             Text("Marketers")
                               
-                      }
-             
-                      
-                      
-                     
-                    
-
-                      
-                      
-                      
+                      } 
                   }
     }
 }

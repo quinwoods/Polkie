@@ -24,16 +24,16 @@ struct Tabbar: View {
             TabView {
                 Discover().offset(y: 20)
                     .tabItem {
-                        Image("search").resizable().frame(width: 40, height: 40)
+                        Image("search")
                 }
-                Create()
+                Create().offset(y: 30)
                     .tabItem {
-                        Image("plus").resizable()
+                        Image("home")
                         
                 }
                 Data().offset(y: 30)
                     .tabItem {
-                        Image("diagram")
+                        Image("mail")
                         
                         
                 }
@@ -44,7 +44,7 @@ struct Tabbar: View {
                            ZStack {
                                Rectangle().frame(width: 425, height: 100).edgesIgnoringSafeArea(.all).foregroundColor(Color.red)
                                Image("titlelogo").resizable().frame(width: 120, height: 40).offset(y: -30)
-                               Image("send").offset(x: 150,y: -30).onTapGesture {
+                               Image("bell").offset(x: 150,y: -30).onTapGesture {
                                 self.sendPressed.toggle()
                                }
                                Image("avatar").offset(x: -150,y: -30).onTapGesture {

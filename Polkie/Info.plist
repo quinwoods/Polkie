@@ -6,14 +6,6 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>fascinate-regular</string>
-		<string>alongsans</string>
-		<string>alongsans-medium</string>
-	</array>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -34,11 +26,13 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
 	<string>653214425458548</string>
 	<key>FacebookDisplayName</key>
 	<string>Polkie</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -58,6 +52,20 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Polkie would like to use your bluetooth sensors for mapping.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>To upload photos for your portfolio.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>To add items to your camera roll.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To see items in your camera roll.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>fascinate-regular</string>
+		<string>alongsans</string>
+		<string>alongsans-medium</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

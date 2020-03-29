@@ -11,7 +11,6 @@ import SwiftUI
 struct DiscoverMap: View {
     var body: some View {
         MapView().frame(width: 350, height: 250).cornerRadius(20).shadow(radius: 20)
-        
     }
 }
 
