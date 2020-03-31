@@ -18,6 +18,8 @@
 		3764C6E1242F1302007D2774 /* home_photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764C6E0242F1302007D2774 /* home_photos.swift */; };
 		3764C6E3242F15D9007D2774 /* home_profilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764C6E2242F15D9007D2774 /* home_profilePicture.swift */; };
 		3764C6E4242FE347007D2774 /* Pods_Polkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5508DB76572242990270A709 /* Pods_Polkie.framework */; };
+		379789A824314D3000B5BEE3 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379789A724314D3000B5BEE3 /* Photos.swift */; };
+		379789AA24329F3400B5BEE3 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379789A924329F3400B5BEE3 /* Messages.swift */; };
 		37A292AA2418F6FD008595DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A292A92418F6FD008595DE /* AppDelegate.swift */; };
 		37A292AC2418F6FD008595DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A292AB2418F6FD008595DE /* SceneDelegate.swift */; };
 		37A292AE2418F6FD008595DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A292AD2418F6FD008595DE /* ContentView.swift */; };
@@ -30,7 +32,6 @@
 		37C62D06242C0ADF0002A8D5 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C62D05242C0ADF0002A8D5 /* Tabbar.swift */; };
 		37C8688A2421B51C006C07DC /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C868892421B51C006C07DC /* Onboarding.swift */; };
 		37C8688C2421BBAE006C07DC /* Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8688B2421BBAE006C07DC /* Signin.swift */; };
-		37ED64DC242C547D00138B23 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED64DB242C547D00138B23 /* Messages.swift */; };
 		37ED64DE242C549000138B23 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED64DD242C549000138B23 /* Profile.swift */; };
 		37ED64E0242C5B9E00138B23 /* TestingNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED64DF242C5B9E00138B23 /* TestingNav.swift */; };
 		37ED64E2242D01E600138B23 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED64E1242D01E600138B23 /* Fonts.swift */; };
@@ -59,6 +60,7 @@
 		37ED6514242DB86400138B23 /* data_earnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED6513242DB86400138B23 /* data_earnings.swift */; };
 		37ED6516242DB92500138B23 /* data_portanal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED6515242DB92500138B23 /* data_portanal.swift */; };
 		37ED6518242DBA2600138B23 /* data_tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED6517242DBA2600138B23 /* data_tags.swift */; };
+		37EFB22D2432B9ED00608E2B /* PackageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFB22C2432B9ED00608E2B /* PackageDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		3764C6DE242E8F6A007D2774 /* Button_medium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button_medium.swift; sourceTree = "<group>"; };
 		3764C6E0242F1302007D2774 /* home_photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_photos.swift; sourceTree = "<group>"; };
 		3764C6E2242F15D9007D2774 /* home_profilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_profilePicture.swift; sourceTree = "<group>"; };
+		379789A724314D3000B5BEE3 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		379789A924329F3400B5BEE3 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		37A292A62418F6FD008595DE /* Polkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polkie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A292A92418F6FD008595DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37A292AB2418F6FD008595DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +87,6 @@
 		37C62D05242C0ADF0002A8D5 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
 		37C868892421B51C006C07DC /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		37C8688B2421BBAE006C07DC /* Signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signin.swift; sourceTree = "<group>"; };
-		37ED64DB242C547D00138B23 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		37ED64DD242C549000138B23 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		37ED64DF242C5B9E00138B23 /* TestingNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingNav.swift; sourceTree = "<group>"; };
 		37ED64E1242D01E600138B23 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 		37ED6513242DB86400138B23 /* data_earnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data_earnings.swift; sourceTree = "<group>"; };
 		37ED6515242DB92500138B23 /* data_portanal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data_portanal.swift; sourceTree = "<group>"; };
 		37ED6517242DBA2600138B23 /* data_tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data_tags.swift; sourceTree = "<group>"; };
+		37EFB22C2432B9ED00608E2B /* PackageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDetail.swift; sourceTree = "<group>"; };
 		49F59612A8308397A7E52C23 /* Pods-Polkie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polkie.debug.xcconfig"; path = "Target Support Files/Pods-Polkie/Pods-Polkie.debug.xcconfig"; sourceTree = "<group>"; };
 		5508DB76572242990270A709 /* Pods_Polkie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Polkie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FAB09CCD816FFBD9A207AE /* Pods-Polkie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polkie.release.xcconfig"; path = "Target Support Files/Pods-Polkie/Pods-Polkie.release.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 			children = (
 				3764C6DA242E8E10007D2774 /* PackageMapView.swift */,
 				37ED64F7242D9A4E00138B23 /* Data.swift */,
+				379789A924329F3400B5BEE3 /* Messages.swift */,
 				37ED64F9242D9A5C00138B23 /* Create.swift */,
 				37ED64FB242D9A7B00138B23 /* Discover.swift */,
 			);
@@ -220,10 +225,10 @@
 		37C62D01242C05780002A8D5 /* Molecules */ = {
 			isa = PBXGroup;
 			children = (
-				37ED64DB242C547D00138B23 /* Messages.swift */,
 				37ED64DD242C549000138B23 /* Profile.swift */,
 				37ED6501242D9DE500138B23 /* discover_Influencer.swift */,
 				37ED6503242D9E9700138B23 /* discover_marketers.swift */,
+				37EFB22C2432B9ED00608E2B /* PackageDetail.swift */,
 				37ED6505242D9F0B00138B23 /* discover_packages.swift */,
 				37ED650F242DB80600138B23 /* data_engagement.swift */,
 				37ED6509242DB59A00138B23 /* data_likes.swift */,
@@ -232,6 +237,7 @@
 				37ED6511242DB85400138B23 /* data_followers.swift */,
 				37589B3C242DC6DC00236BBC /* create_camera.swift */,
 				37ED6513242DB86400138B23 /* data_earnings.swift */,
+				379789A724314D3000B5BEE3 /* Photos.swift */,
 				37ED6515242DB92500138B23 /* data_portanal.swift */,
 				37ED650B242DB67B00138B23 /* data-comments.swift */,
 				3764C6E2242F15D9007D2774 /* home_profilePicture.swift */,
@@ -451,8 +457,8 @@
 				37589B3F242E4AED00236BBC /* Coordinator.swift in Sources */,
 				37ED6518242DBA2600138B23 /* data_tags.swift in Sources */,
 				37ED650E242DB6BE00138B23 /* Tags.swift in Sources */,
-				37ED64DC242C547D00138B23 /* Messages.swift in Sources */,
 				37589B3D242DC6DC00236BBC /* create_camera.swift in Sources */,
+				379789A824314D3000B5BEE3 /* Photos.swift in Sources */,
 				37ED6510242DB80600138B23 /* data_engagement.swift in Sources */,
 				37ED6502242D9DE500138B23 /* discover_Influencer.swift in Sources */,
 				37ED64E0242C5B9E00138B23 /* TestingNav.swift in Sources */,
@@ -463,6 +469,7 @@
 				37C8688A2421B51C006C07DC /* Onboarding.swift in Sources */,
 				37ED6516242DB92500138B23 /* data_portanal.swift in Sources */,
 				3764C6E3242F15D9007D2774 /* home_profilePicture.swift in Sources */,
+				379789AA24329F3400B5BEE3 /* Messages.swift in Sources */,
 				37ED6504242D9E9700138B23 /* discover_marketers.swift in Sources */,
 				37A292AC2418F6FD008595DE /* SceneDelegate.swift in Sources */,
 				37ED6512242DB85400138B23 /* data_followers.swift in Sources */,
@@ -472,6 +479,7 @@
 				37ED64F8242D9A4E00138B23 /* Data.swift in Sources */,
 				37A292AE2418F6FD008595DE /* ContentView.swift in Sources */,
 				37ED6506242D9F0B00138B23 /* discover_packages.swift in Sources */,
+				37EFB22D2432B9ED00608E2B /* PackageDetail.swift in Sources */,
 				3764C6D9242E8DFD007D2774 /* PackageCardView.swift in Sources */,
 				37ED64FC242D9A7B00138B23 /* Discover.swift in Sources */,
 				37ED6514242DB86400138B23 /* data_earnings.swift in Sources */,
@@ -618,7 +626,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Polkie/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;
@@ -641,7 +649,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Polkie/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;

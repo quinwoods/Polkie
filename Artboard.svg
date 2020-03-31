@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="350px" height="350px" viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" transform="translate(32.000000, 11.000000)">
+            <circle id="Oval" fill="#C7CEEA" cx="253" cy="71" r="27"></circle>
+            <circle id="Oval" fill="#FF9AA2" cx="143" cy="169" r="143"></circle>
+            <text id="Polkie" fill="#FFFFFF" font-family="Fascinate-Regular, Fascinate" font-size="60" font-weight="700" letter-spacing="1.33333334">
+                <tspan x="34" y="192">Polkie</tspan>
+            </text>
+            <circle id="Oval" fill="#E2F0CC" cx="234.5" cy="275.5" r="51.5"></circle>
+            <circle id="Oval" fill="#B5EAD7" cx="64.5" cy="64.5" r="64.5"></circle>
+            <circle id="Oval" fill="#FFDAC1" cx="30" cy="286" r="17"></circle>
+        </g>
+    </g>
+</svg>

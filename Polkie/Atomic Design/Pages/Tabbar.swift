@@ -22,16 +22,16 @@ struct Tabbar: View {
             
             
             TabView {
-                Discover().offset(y: 20)
+                Discover()
                     .tabItem {
                         Image("search")
                 }
-                Create().offset(y: 30)
+                Create()
                     .tabItem {
                         Image("home")
                         
                 }
-                Data().offset(y: 30)
+                Messages()
                     .tabItem {
                         Image("mail")
                         
@@ -40,27 +40,27 @@ struct Tabbar: View {
 
             }
             
-            VStack {
-                           ZStack {
-                               Rectangle().frame(width: 425, height: 100).edgesIgnoringSafeArea(.all).foregroundColor(Color.red)
-                               Image("titlelogo").resizable().frame(width: 120, height: 40).offset(y: -30)
-                               Image("bell").offset(x: 150,y: -30).onTapGesture {
-                                self.sendPressed.toggle()
-                               }
-                               Image("avatar").offset(x: -150,y: -30).onTapGesture {
-                                   self.profilePressed = true
-                               }
-                            
-                            
-                           }
-                          Spacer()
-                VStack {
-                               if sendPressed {
-                                   Messages().frame(width: 400)                } else {
-                                   /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
-                               }
-                           }
-                       }
+//            VStack {
+//                           ZStack {
+//                               Rectangle().frame(width: 425, height: 100).edgesIgnoringSafeArea(.all).foregroundColor(Color.red)
+//                               Image("titlelogo").resizable().frame(width: 120, height: 40).offset(y: -30)
+//                               Image("bell").offset(x: 150,y: -30).onTapGesture {
+//                                self.sendPressed.toggle()
+//                               }
+//                               Image("avatar").offset(x: -150,y: -30).onTapGesture {
+//                                   self.profilePressed = true
+//                               }
+//
+//
+//                           }
+//                          Spacer()
+//                VStack {
+//                               if sendPressed {
+//                                   Messages().frame(width: 400)                } else {
+//                                   /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
+//                               }
+//                           }
+//                       }
             
             if profilePressed {
                 Rectangle().frame(width: 250, height: 400).onTapGesture {

@@ -41,26 +41,60 @@ struct create_camera: View {
     @State var buttonChoice: Image? = Image("plus")
     
     var body: some View {
-        ZStack {
-            
-           
-            image?.resizable()
-                .frame(width: 124, height: 124)
-            Button(action: {
-                           self.showCaptureImageView.toggle()
+        GeometryReader { screen in
+            ZStack {
                 
-                       }) {
-                        if (image == nil) {
-                            Image("plus").frame(width: 124, height: 124)
-                        } else {
-                            Image("edit").frame(width: 124, height: 124)                        }
-                       }
-            
-            
-            if (showCaptureImageView) {
-                CaptureImageView(isShown: $showCaptureImageView, image: $image)
-            }
+               
+                self.image?.resizable()
+                    .frame(width: ((screen.size.width/3)-1), height: ((screen.size.width/3)-1))
+                Button(action: {
+                               self.showCaptureImageView.toggle()
+                    
+                           }) {
+                            if (self.image == nil) {
+                                Image("plus").frame(width: ((screen.size.width/3)-1) , height: ((screen.size.width/3)-1))
+                            } else {
+                                Image("edit").frame(width: ((screen.size.width/3)-1) , height: ((screen.size.width/3)-1))                  }
+                           }
+                
+                
+                if (self.showCaptureImageView) {
+                    CaptureImageView(isShown: self.$showCaptureImageView, image: self.$image)
+                }
+            }.frame(alignment: .trailing)
         }
+    }
+}
+
+
+struct Photoss: View {
+    @State var changed = false
+    
+    var body: some View {
+        GeometryReader{ screen in
+            ZStack {
+                
+                //Row Three
+                ZStack {
+                    create_camera().offset(x: self.changed ? 0 : screen.size.width/3)
+                }.onTapGesture {
+                    self.changed.toggle()
+                }
+                Rectangle().frame(width: ((screen.size.width/3)-1) , height: ((screen.size.width/3)-1)).offset(x: screen.size.width/3).offset(y: ((screen.size.width/3)))
+                Rectangle().frame(width: ((screen.size.width/3)-1) , height: ((screen.size.width/3)-1)).offset(x: screen.size.width/3).offset(y: (screen.size.width/3)*2)
+                //Row Two
+                Rectangle().frame(width: ((screen.size.width/3)-1) , height: ((screen.size.width/3)-1))
+                Rectangle().frame(width: ((screen.size.width/3)-1) , height: ((screen.size.width/3)-1)).offset(y: ((screen.size.width/3)))
+                 Rectangle().frame(width: ((screen.size.width/3)-1) , height: ((screen.size.width/3)-1)).offset(y: (screen.size.width/3)*2)
+                //Row One
+                Rectangle().frame(width: ((screen.size.width/3)-1) , height: ((screen.size.width/3)-1)).offset(x: -screen.size.width/3)
+                Rectangle().frame(width: ((screen.size.width/3)-1) , height: ((screen.size.width/3)-1)).offset(x: -screen.size.width/3,y: screen.size.width/3)
+                Rectangle().frame(width: ((screen.size.width/3)-1) , height: ((screen.size.width/3)-1)).offset(x: -screen.size.width/3,y: (screen.size.width/3)*2)
+                
+            }
+            
+        }
+        
     }
 }
 

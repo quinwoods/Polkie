@@ -29,8 +29,8 @@ struct PackageCardView: View {
     var body: some View {
         VStack {
             VStack {
-                Text(company.name).foregroundColor(Color.white).multilineTextAlignment(.center).padding()
-                Text("Amount to be paid: $" + String(company.payment)).foregroundColor(.white)
+                Text(company.name).font(.largeTitle).foregroundColor(Color.white).multilineTextAlignment(.center).padding()
+                Text("Amount to be paid: $" + String(company.payment)).foregroundColor(.white).font(.subheadline)
             }
             Spacer()
             HStack {

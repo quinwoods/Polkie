@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1500px" height="350px" viewBox="0 0 1500 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(363.000000, 25.000000)">
+            <g id="Logo" transform="translate(-0.000000, 0.000000)">
+                <circle id="Oval" fill="#C7CEEA" cx="232.110092" cy="65.1376147" r="24.7706422"></circle>
+                <circle id="Oval" fill="#FF9AA2" cx="131.192661" cy="155.045872" r="131.192661"></circle>
+                <text id="Polkie" fill="#FFFFFF" font-family="Fascinate-Regular, Fascinate" font-size="60" font-weight="700" letter-spacing="1.33333334">
+                    <tspan x="22.1926606" y="178.004587">Polkie</tspan>
+                </text>
+                <circle id="Oval" fill="#E2F0CC" cx="215.137615" cy="252.752294" r="47.2477064"></circle>
+                <circle id="Oval" fill="#B5EAD7" cx="59.1743119" cy="59.1743119" r="59.1743119"></circle>
+                <circle id="Oval" fill="#FFDAC1" cx="27.5229358" cy="262.385321" r="17"></circle>
+            </g>
+            <text id="Brand-Yourself" fill="#C7CEEA" font-family="Fascinate-Regular, Fascinate" font-size="60" font-weight="700" letter-spacing="1.33333334">
+                <tspan x="295" y="173">Brand Yourself</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
