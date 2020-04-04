@@ -25,6 +25,7 @@ struct Messages: View {
                 brandMessage(name: "Apple", time: "6hr")
             }
             .navigationBarTitle("Messages")
+    
         }
     }
 }

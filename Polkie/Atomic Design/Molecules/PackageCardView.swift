@@ -41,7 +41,7 @@ struct PackageCardView: View {
             }.padding()
         } .frame(width: 340, height: 220)
             .background(color)
-            .clipShape(RoundedRectangle(cornerRadius:  20, style: .continuous))
+            .clipShape(Circle())
     }
 }
 

@@ -11,33 +11,27 @@ import SwiftUI
 struct Tabbar: View {
     @State var sendPressed = false
     @State var profilePressed = false
-    
-    
     var body: some View {
-        
-            
-        
         ZStack {
-            
-            
-            
             TabView {
-                Discover()
-                    .tabItem {
-                        Image("search")
-                }
-                Create()
+                
+                walletPage().tabItem{
+                                 Image("wallet")
+                    Text("Earnings")
+                              }
+            
+                profilePage()
                     .tabItem {
                         Image("home")
+                        Text("Home")
                         
                 }
                 Messages()
                     .tabItem {
                         Image("mail")
-                        
-                        
+                        Text("Message")
                 }
-
+              
             }
             
 //            VStack {
